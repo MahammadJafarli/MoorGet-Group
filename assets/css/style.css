@@ -3,6 +3,7 @@
 #navbar {
   width: 100%; }
   #navbar .navbar {
+    width: 100% !important;
     background: transparent;
     height: 70px; }
     #navbar .navbar .navbar-header button {
@@ -41,7 +42,8 @@
       line-height: 80px;
       font-weight: bold;
       font-family: 'Roboto';
-      margin-top: 220px; }
+      margin-top: 0px;
+      padding-top: 220px; }
     #header .header_content p {
       margin-top: 30px;
       color: white;
@@ -58,7 +60,6 @@
       font-size: 18px;
       line-height: 30px;
       font-weight: 600;
-      border-radius: 50px;
       letter-spacing: 1px;
       padding: 15px 40px;
       border: 2px solid white;
@@ -73,13 +74,133 @@
 #about_us {
   width: 100%;
   min-height: 400px;
-  background-color: #202026;
-  color: #fff; }
+  color: black;
+  padding: 60px 0; }
+  #about_us h2 {
+    font-family: 'Roboto';
+    font-size: 44px;
+    line-height: 60px;
+    font-weight: bold; }
+  #about_us p {
+    margin-top: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    font-family: 'Roboto';
+    color: #777;
+    line-height: 25px;
+    letter-spacing: 1px;
+    word-spacing: 0.18em; }
+  #about_us a {
+    margin-top: 20px;
+    background: transparent;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Roboto';
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 15px 40px;
+    border: 2px solid black;
+    transition: all .5s ease; }
+  #about_us a:hover {
+    transition: all .5s ease;
+    color: white;
+    background: black; }
+  #about_us .about_img {
+    height: 415px; }
+    #about_us .about_img img {
+      width: 100%;
+      height: 100%; }
+
+#services {
+  width: 100%;
+  min-height: 400px;
+  padding: 20px 0;
+  background-color: #f4f4f4; }
+  #services h5 {
+    font-size: 36px;
+    line-height: 50px;
+    font-family: 'Roboto';
+    margin-bottom: 0px; }
+  #services p {
+    color: #707070;
+    font-size: 15px;
+    line-height: 26px;
+    font-family: 'Roboto';
+    margin-bottom: 30px; }
+  #services .service {
+    margin-top: 30px; }
+    #services .service .service_img {
+      background: #578385;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      text-align: center; }
+      #services .service .service_img i {
+        color: white;
+        font-size: 25px;
+        color: #fff;
+        margin-top: 13px; }
+    #services .service h6 {
+      color: #222;
+      font-size: 18px;
+      line-height: 1.1;
+      font-family: 'Roboto'; }
+    #services .service p {
+      color: #777;
+      font-family: 'Roboto';
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 400;
+      word-wrap: break-word; }
+
+#works {
+  min-height: 400px;
+  width: 100%;
+  padding: 20px 0; }
+  #works h5 {
+    font-size: 36px;
+    line-height: 50px;
+    font-family: 'Roboto';
+    margin-bottom: 0px; }
+  #works ul {
+    border: none;
+    margin-top: 30px; }
+    #works ul li {
+      list-style: none;
+      display: inline-block; }
+      #works ul li a {
+        text-decoration: none;
+        padding: 0 1.5rem;
+        font-size: 18px;
+        border-radius: 15px;
+        border: 0;
+        color: #578385 !important;
+        cursor: pointer;
+        display: inline-block;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: 'Open Sans'; }
+  #works .items {
+    margin-top: 20px; }
+    #works .items .item {
+      transition: .5s; }
+      #works .items .item a {
+        text-decoration: none; }
+        #works .items .item a img {
+          width: 100%;
+          height: 100%; }
+    #works .items .item:hover {
+      opacity: 0.7;
+      transition: .5s; }
 
 @media screen and (max-width: 768px) {
   #header .header_content {
     padding: 0 20px; }
     #header .header_content h1 {
-      margin-top: 60px; } }
+      padding-top: 80px; } }
 
 /*# sourceMappingURL=style.css.map */
