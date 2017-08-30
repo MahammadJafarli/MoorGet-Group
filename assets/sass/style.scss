@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Roboto', sans-serif;;
+}
+// navbar sectionun bashlangici
+#navbar{
+  width: 100%;
+    .navbar{
+      background: transparent;
+      height: 70px;
+        .navbar-header{
+          button{
+            border: 1px solid white;
+            i{
+              color:white;
+              font-size: 22px;
+            }
+          }
+        }
+          .collapse{
+            .nav{
+              padding-top: 10px;
+              li{
+                a{
+                  color: white;
+                  font-size: 18px;
+                  letter-spacing: 3px;
+                  font-weight: 300;
+                }a:hover{
+                  background: none;
+                }
+              }
+            }
+          }
+    }
+    @media screen and (max-width: 768px){
+      .navbar{
+        .collapse{
+          background: black;
+        }
+      }
+    }
+}
+// navabr sectionun sonu
+
+// header sectionun bashlanghici
+#header{
+  height: 800px;
+  width: 100%;
+  background-image: url('../../images/1500133346.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+    .header_content{
+      padding: 0 250px;
+      h1{
+        color: white;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        font-size: 60px;
+        line-height: 80px;
+        font-weight: bold;
+        font-family: 'Roboto';
+        margin-top: 220px;
+      }
+      p{
+        margin-top: 30px;
+        color:white;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 200;
+        opacity: 0.8;
+        font-family: 'Roboto';
+      }
+      button{
+        margin-top: 20px;
+        background: transparent;
+        color:white;
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 600;
+        border-radius: 50px;
+        letter-spacing: 1px;
+        padding: 15px 40px;
+        border: 2px solid white;
+        transition:all .5s ease;
+      }button:hover{
+        background: white;
+        color: black;
+        transition:all .5s ease;
+      }button:focus{
+        outline: none;
+      }
+    }
+}
+// header sectionun sonu
+
+// about_us sectionun bashlangici
+#about_us{
+  width: 100%;
+  min-height: 400px;
+  background-color: #202026;
+  color: #fff;
+}
+// about_us sectionun sonu
+
+
+
+// ==========     media queries     ==========
+@media screen and (max-width: 768px){
+  #header{
+    .header_content{
+      padding: 0 20px;
+        h1{
+          margin-top: 60px;
+        }
+    }
+  }
+}
