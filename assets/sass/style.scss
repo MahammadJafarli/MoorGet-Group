@@ -139,7 +139,8 @@
     }a:hover{
       transition:all .5s ease;
       color: white;
-      background: black;
+      background: #578385;
+      border-color: white;
     }
     .about_img{
       // width: 550px;
@@ -512,6 +513,57 @@
   }
 }
 // contact sectionun sonu
+
+// footer sectionun bashlangici
+footer{
+  width: 100%;
+  min-height: 80px;
+  background-color: #1e1e1e;
+  padding: 20px 0;
+    p{
+      display: inline-block;
+      color: white;
+      font-size: 18px;
+      font-family: 'Roboto';
+      margin-right: 15px;
+      margin-top: 12px;
+        i{
+          margin-right: 10px;
+        }
+    }
+    span{
+      color: white;
+      font-size: 18px;
+      margin: 0 20px;
+    }
+    ul{
+      padding: 0px;
+        li{
+          list-style: none;
+          display: inline-block;
+          border-radius: 100%;
+          border: 1px solid white;
+          width: 40px;
+          height: 40px;
+          margin-right: 10px;
+          transition: all .5s ease;
+            a{
+              text-decoration: none;
+              color: white;
+              font-size: 15px;
+              line-height: 40px;
+            }
+        }li:hover{
+          background: white;
+          transition: all .5s ease;
+          border-color: white;
+            a{
+              color:black;
+            }
+        }
+    }
+}
+// footer sectionun sonu
 
 // ==========     media queries     ==========
 @media screen and (max-width: 768px){

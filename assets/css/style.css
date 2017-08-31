@@ -108,7 +108,8 @@
   #about_us a:hover {
     transition: all .5s ease;
     color: white;
-    background: black; }
+    background: #578385;
+    border-color: white; }
   #about_us .about_img {
     height: 415px; }
     #about_us .about_img img {
@@ -394,6 +395,47 @@
     color: white; }
   #contact iframe {
     margin-top: 50px; }
+
+footer {
+  width: 100%;
+  min-height: 80px;
+  background-color: #1e1e1e;
+  padding: 20px 0; }
+  footer p {
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto';
+    margin-right: 15px;
+    margin-top: 12px; }
+    footer p i {
+      margin-right: 10px; }
+  footer span {
+    color: white;
+    font-size: 18px;
+    margin: 0 20px; }
+  footer ul {
+    padding: 0px; }
+    footer ul li {
+      list-style: none;
+      display: inline-block;
+      border-radius: 100%;
+      border: 1px solid white;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      transition: all .5s ease; }
+      footer ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        line-height: 40px; }
+    footer ul li:hover {
+      background: white;
+      transition: all .5s ease;
+      border-color: white; }
+      footer ul li:hover a {
+        color: black; }
 
 @media screen and (max-width: 768px) {
   #header .header_content {
