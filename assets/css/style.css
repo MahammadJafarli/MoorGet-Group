@@ -17,7 +17,8 @@
         color: white;
         font-size: 18px;
         letter-spacing: 3px;
-        font-weight: 300; }
+        font-weight: 300;
+        cursor: pointer; }
       #navbar .navbar .collapse .nav li a:hover {
         background: none; }
   @media screen and (max-width: 768px) {
@@ -118,7 +119,7 @@
   width: 100%;
   min-height: 400px;
   padding: 20px 0;
-  background-color: #f4f4f4; }
+  background-color: #e6e6e6; }
   #services h5 {
     font-size: 36px;
     line-height: 50px;
@@ -209,9 +210,11 @@
           height: 100%;
           border: 1px solid #578385; }
           #works .items .item .caption .border h4 {
-            color: #222;
-            font-family: 'Roboto';
             margin-top: 60px; }
+            #works .items .item .caption .border h4 a {
+              color: #222;
+              font-family: 'Roboto';
+              text-decoration: none; }
           #works .items .item .caption .border ul {
             padding: 0px; }
             #works .items .item .caption .border ul li {
@@ -230,7 +233,7 @@
   width: 100%;
   min-height: 450px;
   padding: 20px 0;
-  background: #f4f4f4;
+  background: #e6e6e6;
   overflow-x: hidden; }
   #feedbacks h5 {
     font-size: 36px;
@@ -339,6 +342,58 @@
   #team .member:hover {
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.15);
     transition: all .5s ease; }
+
+#contact {
+  width: 100%;
+  min-height: 500px;
+  padding: 20px 0; }
+  #contact h5 {
+    font-size: 36px;
+    line-height: 50px;
+    font-family: 'Roboto';
+    margin-bottom: 30px; }
+  #contact .message h5 {
+    font-size: 24px;
+    color: #222222;
+    font-family: 'Roboto'; }
+  #contact .message input {
+    border: none;
+    border-bottom: 1px solid #578385;
+    border-radius: 0px;
+    box-shadow: none;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    margin-bottom: 25px;
+    font-family: 'Roboto'; }
+  #contact .message textarea {
+    outline: none;
+    resize: none;
+    border: 0px;
+    border-bottom: 1px solid #578385;
+    font-family: 'Roboto';
+    border-radius: 0px;
+    box-shadow: none; }
+  #contact .message button {
+    margin-top: 20px;
+    background: transparent;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Roboto';
+    line-height: 50px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 0 20px;
+    border: 1px solid #578385;
+    transition: all .5s ease; }
+  #contact .message button:hover {
+    transition: all .5s ease;
+    background: #578385;
+    color: white; }
+  #contact iframe {
+    margin-top: 50px; }
 
 @media screen and (max-width: 768px) {
   #header .header_content {

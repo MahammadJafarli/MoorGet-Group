@@ -27,12 +27,12 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Testimonial</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a data-scroll-nav="0">Home</a></li>
+              <li><a data-scroll-nav="1">About</a></li>
+              <li><a data-scroll-nav="2">Services</a></li>
+              <li><a data-scroll-nav="3">Testimonial</a></li>
+              <li><a data-scroll-nav="4">Team</a></li>
+              <li><a data-scroll-nav="5">Contact</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
@@ -41,7 +41,7 @@
     <!-- navbar sectionun sonu -->
 
     <!-- header sectionun bashlangici -->
-    <section id="header">
+    <section id="header" data-scroll-index="0">
       <!-- <div style="height:220px;"></div> -->
       <div class="text-center">
           <div class="header_content">
@@ -55,7 +55,7 @@
     <!-- header sectionun sonu -->
 
     <!-- about us sectionun bashlangici -->
-    <section id="about_us">
+    <section id="about_us" data-scroll-index="1">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
@@ -199,7 +199,7 @@
                       </a>
                       <div class="caption">
                         <div class="border">
-                          <h4>Strategy & Consultant</h4>
+                          <h4><a href="#">Strategy & Consultant</a></h4>
                           <ul>
                             <li>Social / </li>
                             <li>Smm / </li>
@@ -472,8 +472,47 @@
     </section>
     <!-- team sectionun sonu -->
 
+    <!-- contact sectionun bashlangici -->
+    <section id="contact">
+      <div class="container">
+        <div class="text-center">
+          <h5>Contact Us</h5>
+        </div>
+          <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+            <div class="message">
+              <h5>Send Us A Message</h5>
+              <form class="" action="index.html" method="post">
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                  <input type="text" class="form-control" name="" value="" placeholder="Name *">
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                  <input type="email" class="form-control" name="" value="" placeholder="Email *">
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                  <input type="text" class="form-control" name="" value="" placeholder="Subject *">
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                  <input type="text" class="form-control" name="" value="" placeholder="Phone">
+                </div>
+                <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                  <textarea name="name" class="form-control" placeholder="Message" rows="8" cols="80"></textarea>
+                </div>
+                <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                  <button type="button" class="btn" name="button">send message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6 col-xs-12 col-lg-6 col-sm-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d759.8014382492416!2d49.82916352923827!3d40.38213224871056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d40.382208399999996!2d49.8296302!4m3!3m2!1d40.3822002!2d49.829622099999995!5e0!3m2!1sen!2s!4v1504175375226" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+      </div>
+    </section>
+    <!-- contact sectionun sonu -->
+
     <script type="text/javascript" src="assets/vendors/jquery/jquery-3.1.0.js"></script>
     <script type="text/javascript" src="assets/vendors/bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/scrollIt.js"></script>
   </body>
 </html>
