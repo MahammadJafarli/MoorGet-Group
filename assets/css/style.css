@@ -183,19 +183,49 @@
         margin-bottom: 1rem;
         text-transform: uppercase;
         font-weight: bold;
-        font-family: 'Open Sans'; }
+        font-family: 'Roboto'; }
   #works .items {
     margin-top: 20px; }
     #works .items .item {
-      transition: .5s; }
+      transition: .5s;
+      position: relative;
+      overflow: hidden; }
       #works .items .item a {
         text-decoration: none; }
         #works .items .item a img {
           width: 100%;
           height: 100%; }
-    #works .items .item:hover {
-      opacity: 0.7;
-      transition: .5s; }
+      #works .items .item .caption {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: .8;
+        position: absolute;
+        top: 0px;
+        padding: 10px;
+        transform: translateY(207px);
+        transition: all .5s ease; }
+        #works .items .item .caption .border {
+          width: 100%;
+          height: 100%;
+          border: 1px solid #578385; }
+          #works .items .item .caption .border h4 {
+            color: #222;
+            font-family: 'Roboto';
+            margin-top: 60px; }
+          #works .items .item .caption .border ul {
+            padding: 0px; }
+            #works .items .item .caption .border ul li {
+              list-style: none;
+              display: inline-block;
+              color: #777;
+              font-family: 'Roboto';
+              font-size: 14px;
+              line-height: 24px;
+              font-weight: 300; }
+    #works .items .item:hover .caption {
+      transform: translateY(0px);
+      transition: all .5s ease; }
 
 @media screen and (max-width: 768px) {
   #header .header_content {

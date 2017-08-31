@@ -204,9 +204,7 @@
 
 // services sectionun sonu
 
-// feedbacks sectionun bashlangici bashlangici
-
-// feedbacks sectionun sonu
+// work sectionun bashlangici
 #works{
   min-height: 400px;
   width: 100%;
@@ -235,7 +233,7 @@
             margin-bottom: 1rem;
             text-transform: uppercase;
             font-weight: bold;
-            font-family: 'Open Sans';
+            font-family: 'Roboto';
           }
       }
   }
@@ -243,6 +241,8 @@
     margin-top: 20px;
     .item{
       transition: .5s;
+      position: relative;
+      overflow: hidden;
         a{
           text-decoration: none;
             img{
@@ -250,12 +250,55 @@
               height: 100%;
             }
         }
+        .caption{
+          width: 100%;
+          height: 100%;
+          background-color: #fff;
+          opacity: .8;
+          position: absolute;
+          top: 0px;
+          padding: 10px;
+          transform: translateY(207px);
+          transition: all .5s ease;
+            .border{
+              width: 100%;
+              height: 100%;
+              border: 1px solid #578385;
+              h4{
+                color: #222;
+                font-family: 'Roboto';
+                margin-top: 60px;
+              }
+              ul{
+                padding: 0px;
+                  li{
+                    list-style: none;
+                    display: inline-block;
+                    color: #777;
+                    font-family: 'Roboto';
+                    font-size: 14px;
+                    line-height: 24px;
+                    font-weight: 300;
+                  }
+              }
+            }
+        }
     }.item:hover{
-      opacity: 0.7;
-      transition: .5s;
+      .caption{
+        transform: translateY(0px);
+        transition: all .5s ease;
+      }
     }
   }
 }
+// work sectionun sonu
+
+// feedbacks sectionun bashlangici bashlangici
+#feedbacks{
+  
+}
+// feedbacks sectionun sonu
+
 // ==========     media queries     ==========
 @media screen and (max-width: 768px){
   #header{
