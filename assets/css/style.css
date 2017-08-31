@@ -227,6 +227,47 @@
       transform: translateY(0px);
       transition: all .5s ease; }
 
+#feedbacks {
+  width: 100%;
+  min-height: 400px;
+  padding: 20px 0; }
+  #feedbacks h5 {
+    font-size: 36px;
+    line-height: 50px;
+    font-family: 'Roboto';
+    margin-bottom: 60px; }
+  #feedbacks .carousel .carousel-indicators {
+    top: 290px; }
+    #feedbacks .carousel .carousel-indicators li {
+      border: 1px solid black !important; }
+    #feedbacks .carousel .carousel-indicators .active {
+      background-color: black !important; }
+  #feedbacks .carousel .carousel-inner {
+    overflow: visible; }
+    #feedbacks .carousel .carousel-inner .item img {
+      width: 150px;
+      height: 150px;
+      border-radius: 100%;
+      text-align: center; }
+    #feedbacks .carousel .carousel-inner .item .carousel-caption {
+      top: 150px; }
+      #feedbacks .carousel .carousel-inner .item .carousel-caption h3 {
+        color: black;
+        font-size: 18px;
+        font-family: 'Roboto'; }
+      #feedbacks .carousel .carousel-inner .item .carousel-caption p {
+        color: black;
+        font-size: 15px;
+        font-family: 'Roboto'; }
+  #feedbacks .carousel .carousel-control {
+    background: transparent;
+    color: black;
+    opacity: 1; }
+  #feedbacks .carousel .left {
+    left: 15%; }
+  #feedbacks .carousel .right {
+    right: 15%; }
+
 @media screen and (max-width: 768px) {
   #header .header_content {
     padding: 0 20px; }

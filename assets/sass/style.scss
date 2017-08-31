@@ -295,7 +295,62 @@
 
 // feedbacks sectionun bashlangici bashlangici
 #feedbacks{
-  
+  width: 100%;
+  min-height: 400px;
+  padding: 20px 0;
+  h5{
+    font-size: 36px;
+    line-height: 50px;
+    font-family: 'Roboto';
+    margin-bottom: 60px;
+  }
+    .carousel{
+      .carousel-indicators{
+        top: 290px;
+            li{
+              border: 1px solid black !important;
+            }
+            .active{
+              background-color: black !important;
+            }
+      }
+      .carousel-inner{
+        overflow: visible;
+        .item{
+          img{
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            text-align: center;
+          }
+          .carousel-caption{
+            top: 150px;
+            h3{
+              color: black;
+              font-size: 18px;
+              font-family: 'Roboto';
+            }
+            p{
+              color: black;
+              font-size: 15px;
+              font-family: 'Roboto';
+            }
+          }
+        }
+      }
+      .carousel-control{
+        background: transparent;
+        color:black;
+        opacity: 1;
+      }
+      .left{
+        left:15%;
+        // top:10%;
+      }
+      .right{
+        right: 15%;
+      }
+    }
 }
 // feedbacks sectionun sonu
 
