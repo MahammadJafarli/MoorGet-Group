@@ -519,7 +519,7 @@ footer{
   width: 100%;
   min-height: 80px;
   background-color: #1e1e1e;
-  padding: 20px 0;
+  padding: 20px 0 5px 0;
     p{
       display: inline-block;
       color: white;
@@ -561,6 +561,13 @@ footer{
               color:black;
             }
         }
+    }
+    .copyright{
+      color: rgba(135,135,135,.3);
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 1px;
     }
 }
 // footer sectionun sonu
