@@ -453,6 +453,7 @@
   width: 100%;
   min-height: 500px;
   padding: 20px 0;
+  background-color: #e6e6e6;
   h5{
     font-size: 36px;
     line-height: 50px;
@@ -476,6 +477,7 @@
       font-weight: 300;
       margin-bottom: 25px;
       font-family: 'Roboto';
+      background-color: transparent;
     }
     textarea{
       outline: none;
@@ -485,6 +487,7 @@
       font-family: 'Roboto';
       border-radius: 0px;
       box-shadow: none;
+      background-color: transparent;
     }
     button{
       margin-top: 20px;
