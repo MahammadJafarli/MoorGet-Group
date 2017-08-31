@@ -203,7 +203,6 @@
         }
       }
 }
-
 // services sectionun sonu
 
 // work sectionun bashlangici
@@ -298,7 +297,7 @@
 }
 // work sectionun sonu
 
-// feedbacks sectionun bashlangici bashlangici
+// feedbacks sectionun bashlangici
 #feedbacks{
   width: 100%;
   min-height: 450px;
@@ -538,7 +537,10 @@ footer{
     }
     ul{
       padding: 0px;
+      text-align: right;
+      margin-top: 5px;
         li{
+          text-align: center;
           list-style: none;
           display: inline-block;
           border-radius: 100%;
