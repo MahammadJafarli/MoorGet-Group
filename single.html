@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
   </head>
   <body>
 
@@ -57,7 +61,15 @@
           <div class="row">
             <div class="col-md-9 col-lg-9 col-sm-8 col-xs-12">
               <div class="single_img">
-                <img src="images/single2.jpg" class="img-responsive" alt="">
+                <div class="col-md-8 col-lg-8 col-sm-8 col-xs-12 first-img" style="padding-left:0px;">
+                  <img src="images/single2.jpg" class="img-responsive img"  alt="">
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 second-img" style="padding-left:0px;">
+                  <img src="images/1500133346.jpeg" class="img-responsive img"  alt="">
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 second-img" style="padding-left:0px;">
+                  <img src="images/single2.jpg" class="img-responsive img"  alt="">
+                </div>
               </div>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
             </div>
@@ -86,6 +98,15 @@
                 </div>
               </div>
             </div>
+            <div id="myModal" class="modal">
+
+                <!-- The Close Button -->
+                <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+
+              </div>
           </div>
         </div>
       </div>
@@ -114,6 +135,21 @@
     </footer>
     <!-- footer sectionun sonu -->
 
+    <script type="text/javascript">
+        $('.img').click(function(){
+        $('#myModal').css('display', 'block');
+        $('#myModal img').attr('src', this.src);
+        $('#myModal #caption').html(this.alt);
+        });
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        $('#myModal').css('display', 'none');;
+        }
+    </script>
     <script type="text/javascript" src="assets/vendors/jquery/jquery-3.1.0.js"></script>
     <script type="text/javascript" src="assets/vendors/bootstrap/js/bootstrap.js"></script>
     <!-- <script type="text/javascript" src="assets/js/main.js"></script> -->

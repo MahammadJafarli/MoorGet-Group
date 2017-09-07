@@ -7,7 +7,8 @@
     background: transparent;
     height: 70px; }
     #navbar .navbar .navbar-header button {
-      border: 1px solid white; }
+      border: 1px solid white;
+      margin-top: 12px; }
       #navbar .navbar .navbar-header button i {
         color: white;
         font-size: 22px; }
@@ -528,7 +529,96 @@ footer {
       font-family: 'Roboto';
       margin-top: 100px; }
   #single_post .single_post {
-    padding: 40px 0; }
+    padding: 40px 0;
+    /* Style the Image Used to Trigger the Modal */
+    /* The Modal (background) */
+    /* Modal Content (Image) */
+    /* Caption of Modal Image (Image Text) - Same Width as the Image */
+    /* Add Animation - Zoom in the Modal */
+    /* The Close Button */
+    /* 100% Image Width on Smaller Screens */ }
+    #single_post .single_post #myImg {
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s; }
+    #single_post .single_post #myImg:hover {
+      opacity: 0.7; }
+    #single_post .single_post .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      padding-top: 100px;
+      /* Location of the box */
+      left: 0;
+      top: 60px;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: black;
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.9);
+      /* Black w/ opacity */ }
+    #single_post .single_post .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px; }
+    #single_post .single_post #caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px; }
+    #single_post .single_post .modal-content, #single_post .single_post #caption {
+      -webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+      animation-duration: 0.6s; }
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0); }
+  to {
+    -webkit-transform: scale(1); } }
+@keyframes zoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+    #single_post .single_post .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s; }
+    #single_post .single_post .close:hover,
+    #single_post .single_post .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer; }
+    @media only screen and (max-width: 700px) {
+      #single_post .single_post .modal-content {
+        width: 100%; } }
+    #single_post .single_post .single_img {
+      width: 100%;
+      min-height: 250px;
+      margin-bottom: 50px; }
+      #single_post .single_post .single_img .second-img {
+        margin-bottom: 8px;
+        height: 133px; }
+        #single_post .single_post .single_img .second-img img {
+          width: 100%;
+          height: 100%; }
     #single_post .single_post p {
       margin-top: 30px;
       font-size: 15px;
@@ -582,7 +672,8 @@ footer {
         margin-bottom: 20px; }
         #single_post .single_post .side_section .input-group input {
           border: 0px;
-          width: 80%; }
+          width: 80%;
+          z-index: 0 !important; }
         #single_post .single_post .side_section .input-group button {
           background: none;
           border: 0px;
@@ -614,6 +705,20 @@ footer {
   #header .header_content {
     padding: 0 20px; }
     #header .header_content h1 {
-      padding-top: 80px; } }
+      padding-top: 80px; }
+
+  #works ul {
+    padding-left: 0px; }
+
+  #posts .post {
+    margin-bottom: 40px; }
+  #posts .more_post {
+    margin-top: 0px; }
+
+  #contact h5 {
+    text-align: center; }
+
+  footer ul {
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
