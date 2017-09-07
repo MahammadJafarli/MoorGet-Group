@@ -719,6 +719,9 @@ footer {
     text-align: center; }
 
   footer ul {
-    text-align: center; } }
+    text-align: center; }
+
+  #single_post .single_post .single_img .first-img {
+    margin-bottom: 8px; } }
 
 /*# sourceMappingURL=style.css.map */
