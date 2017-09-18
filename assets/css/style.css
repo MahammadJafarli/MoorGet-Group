@@ -1,19 +1,24 @@
 @font-face {
   font-family: 'Roboto', sans-serif; }
+@font-face {
+  font-family: Din;
+  src: url("../fonts/DIN/FF_DIN_Pro_Regular.otf"); }
 #navbar {
   width: 100%; }
   #navbar .navbar {
     width: 100% !important;
     background: transparent;
-    height: 70px; }
+    height: 82px; }
+    #navbar .navbar .navbar-header img {
+      width: 200px; }
     #navbar .navbar .navbar-header button {
       border: 1px solid white;
-      margin-top: 12px; }
+      margin-top: 18px; }
       #navbar .navbar .navbar-header button i {
         color: white;
         font-size: 22px; }
     #navbar .navbar .collapse .nav {
-      padding-top: 10px; }
+      padding-top: 16px; }
       #navbar .navbar .collapse .nav li a {
         color: white;
         font-size: 18px;
@@ -24,9 +29,30 @@
         background: none; }
       #navbar .navbar .collapse .nav li a:focus {
         background: transparent; }
+      #navbar .navbar .collapse .nav li .dropdown {
+        margin-top: 7px; }
+        #navbar .navbar .collapse .nav li .dropdown button {
+          background: transparent;
+          border: 1px solid white;
+          border-radius: 0px;
+          color: white;
+          font-size: 18px;
+          letter-spacing: 3px;
+          font-weight: 200;
+          font-family: 'Din';
+          padding-bottom: 4px; }
+        #navbar .navbar .collapse .nav li .dropdown ul {
+          width: 100px;
+          min-height: 30px; }
+          #navbar .navbar .collapse .nav li .dropdown ul li a {
+            color: black; }
   @media screen and (max-width: 768px) {
     #navbar .navbar .collapse {
-      background: black; } }
+      background: black; }
+    #navbar .navbar .dropdown {
+      margin-left: 12px; }
+      #navbar .navbar .dropdown ul li a {
+        color: white !important; } }
 
 #header {
   height: 800px;
@@ -45,7 +71,7 @@
       font-size: 60px;
       line-height: 80px;
       font-weight: bold;
-      font-family: 'Roboto';
+      font-family: 'Din';
       margin-top: 0px;
       padding-top: 220px; }
     #header .header_content p {
@@ -55,7 +81,7 @@
       line-height: 30px;
       font-weight: 200;
       opacity: 0.8;
-      font-family: 'Roboto'; }
+      font-family: 'Din'; }
     #header .header_content button {
       margin-top: 20px;
       background: transparent;
@@ -81,7 +107,7 @@
   color: black;
   padding: 60px 0; }
   #about_us h2 {
-    font-family: 'Roboto';
+    font-family: 'Din';
     font-size: 44px;
     line-height: 60px;
     font-weight: bold; }
@@ -89,7 +115,7 @@
     margin-top: 30px;
     font-size: 15px;
     line-height: 30px;
-    font-family: 'Roboto';
+    font-family: 'Din';
     color: #777;
     line-height: 25px;
     letter-spacing: 1px;
@@ -101,7 +127,7 @@
     text-decoration: none;
     text-transform: uppercase;
     font-size: 18px;
-    font-family: 'Roboto';
+    font-family: 'Din';
     line-height: 30px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -127,13 +153,13 @@
   #services h5 {
     font-size: 36px;
     line-height: 50px;
-    font-family: 'Roboto';
+    font-family: 'Din';
     margin-bottom: 0px; }
   #services p {
     color: #707070;
     font-size: 15px;
     line-height: 26px;
-    font-family: 'Roboto';
+    font-family: 'Din';
     margin-bottom: 30px; }
   #services .service {
     margin-top: 30px; }
@@ -152,10 +178,10 @@
       color: #222;
       font-size: 18px;
       line-height: 1.1;
-      font-family: 'Roboto'; }
+      font-family: 'Din'; }
     #services .service p {
       color: #777;
-      font-family: 'Roboto';
+      font-family: 'Din';
       font-size: 14px;
       line-height: 24px;
       font-weight: 400;
@@ -168,7 +194,7 @@
   #works h5 {
     font-size: 36px;
     line-height: 50px;
-    font-family: 'Roboto';
+    font-family: 'Din';
     margin-bottom: 0px; }
   #works ul {
     border: none;
@@ -188,7 +214,7 @@
         margin-bottom: 1rem;
         text-transform: uppercase;
         font-weight: bold;
-        font-family: 'Roboto'; }
+        font-family: 'Din'; }
   #works .items {
     margin-top: 20px; }
     #works .items .item {
@@ -217,7 +243,7 @@
             margin-top: 60px; }
             #works .items .item .caption .border h4 a {
               color: #222;
-              font-family: 'Roboto';
+              font-family: 'Din';
               text-decoration: none; }
           #works .items .item .caption .border ul {
             padding: 0px; }
@@ -225,7 +251,7 @@
               list-style: none;
               display: inline-block;
               color: #777;
-              font-family: 'Roboto';
+              font-family: 'Din';
               font-size: 14px;
               line-height: 24px;
               font-weight: 300; }
@@ -242,7 +268,7 @@
   #feedbacks h5 {
     font-size: 36px;
     line-height: 50px;
-    font-family: 'Roboto';
+    font-family: 'Din';
     margin-bottom: 40px; }
   #feedbacks .carousel .carousel-indicators {
     top: 270px; }
@@ -262,11 +288,11 @@
       #feedbacks .carousel .carousel-inner .item .carousel-caption h3 {
         color: black;
         font-size: 18px;
-        font-family: 'Roboto'; }
+        font-family: 'Din'; }
       #feedbacks .carousel .carousel-inner .item .carousel-caption p {
         color: black;
         font-size: 15px;
-        font-family: 'Roboto'; }
+        font-family: 'Din'; }
   #feedbacks .carousel .carousel-control {
     background: transparent;
     color: black;
@@ -283,7 +309,7 @@
   #team h5 {
     font-size: 36px;
     line-height: 50px;
-    font-family: 'Roboto';
+    font-family: 'Din';
     margin-bottom: 30px; }
   #team .member {
     transition: all .5s ease; }
@@ -331,7 +357,7 @@
       padding: 10px;
       border: 1px solid #eee;
       border-top: 0px;
-      font-family: 'Roboto';
+      font-family: 'Din';
       transition: all .5s ease; }
       #team .member .member_info p {
         color: #777;
@@ -354,7 +380,7 @@
   #posts h5 {
     font-size: 36px;
     line-height: 50px;
-    font-family: 'Roboto';
+    font-family: 'Din';
     margin-bottom: 30px; }
   #posts .post {
     transition: all .5s ease;
@@ -370,20 +396,20 @@
       padding: 0 10px; }
       #posts .post .post_caption h5 {
         font-size: 18px;
-        font-family: 'Roboto';
+        font-family: 'Din';
         line-height: 30px;
         margin-bottom: 15px; }
       #posts .post .post_caption p {
         font-size: 15px;
         line-height: 25px;
         color: #777;
-        font-family: 'Roboto'; }
+        font-family: 'Din'; }
       #posts .post .post_caption a {
         text-decoration: none;
         text-align: center;
         font-size: 20px;
         font-style: bold;
-        font-family: 'Roboto';
+        font-family: 'Din';
         text-transform: uppercase; }
         #posts .post .post_caption a i {
           margin-left: 10px; }
@@ -398,7 +424,7 @@
     text-decoration: none;
     text-transform: uppercase;
     font-size: 15px;
-    font-family: 'Roboto';
+    font-family: 'Din';
     line-height: 50px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -418,12 +444,12 @@
   #contact h5 {
     font-size: 36px;
     line-height: 50px;
-    font-family: 'Roboto';
+    font-family: 'Din';
     margin-bottom: 30px; }
   #contact .message h5 {
     font-size: 24px;
     color: #222222;
-    font-family: 'Roboto'; }
+    font-family: 'Din'; }
   #contact .message input {
     border: none;
     border-bottom: 1px solid #578385;
@@ -433,14 +459,14 @@
     line-height: 30px;
     font-weight: 300;
     margin-bottom: 25px;
-    font-family: 'Roboto';
+    font-family: 'Din';
     background-color: transparent; }
   #contact .message textarea {
     outline: none;
     resize: none;
     border: 0px;
     border-bottom: 1px solid #578385;
-    font-family: 'Roboto';
+    font-family: 'Din';
     border-radius: 0px;
     box-shadow: none;
     background-color: transparent; }
@@ -451,7 +477,7 @@
     text-decoration: none;
     text-transform: uppercase;
     font-size: 15px;
-    font-family: 'Roboto';
+    font-family: 'Din';
     line-height: 50px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -474,7 +500,7 @@ footer {
     display: inline-block;
     color: white;
     font-size: 18px;
-    font-family: 'Roboto';
+    font-family: 'Din';
     margin-right: 15px;
     margin-top: 12px; }
     footer p i {
@@ -520,14 +546,14 @@ footer {
   min-height: 500px; }
   #single_post .single_header {
     width: 100%;
-    height: 250px;
+    height: 300px;
     background: url("../../images/banner.jpg"); }
     #single_post .single_header h2 {
       color: white;
       font-size: 40px;
       line-height: 40px;
-      font-family: 'Roboto';
-      margin-top: 100px; }
+      font-family: 'Din';
+      margin-top: 130px; }
   #single_post .single_post {
     padding: 40px 0;
     /* Style the Image Used to Trigger the Modal */
@@ -624,7 +650,7 @@ footer {
       font-size: 15px;
       line-height: 26px;
       color: #707070;
-      font-family: 'Roboto'; }
+      font-family: 'Din'; }
     #single_post .single_post .blogs {
       width: 100%;
       padding-right: 20px; }
@@ -644,26 +670,26 @@ footer {
             color: #222;
             font-size: 24px;
             line-height: 28px;
-            font-family: 'Roboto'; }
+            font-family: 'Din'; }
           #single_post .single_post .blogs .blog .blog_caption h3 a:hover {
             color: #578385; }
         #single_post .single_post .blogs .blog .blog_caption p {
           font-size: 15px;
           line-height: 26px;
           color: #707070;
-          font-family: 'Roboto'; }
+          font-family: 'Din'; }
         #single_post .single_post .blogs .blog .blog_caption span {
           font-size: 13px;
           line-height: 26px;
           color: #578385;
-          font-family: 'Roboto'; }
+          font-family: 'Din'; }
     #single_post .single_post .side_section {
       padding: 0 20px; }
       #single_post .single_post .side_section h6 {
         color: #000;
         font-size: 24px;
         line-height: 1.4;
-        font-family: 'Roboto'; }
+        font-family: 'Din'; }
       #single_post .single_post .side_section .input-group {
         border-radius: 0px;
         height: 37px;
@@ -689,7 +715,7 @@ footer {
           #single_post .single_post .side_section ul li a {
             text-decoration: none;
             color: #666;
-            font-family: 'Roboto';
+            font-family: 'Din';
             padding-left: 8px;
             transition: all .5s ease; }
             #single_post .single_post .side_section ul li a i {
